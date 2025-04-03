@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\PubTmp\Out\" />
+  <dbfullsql path="D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\PubTmp\EFSQLScripts\ApplicationDbContext.sql" />
+</sitemanifest>

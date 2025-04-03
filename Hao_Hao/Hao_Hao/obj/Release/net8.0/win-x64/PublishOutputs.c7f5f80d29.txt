@@ -1,0 +1,6 @@
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Development.json
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.json
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\bundleconfig.json
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\Hao_Hao.pdb
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\Microsoft.Data.SqlClient.SNI.dll
+D:\Code-Visual2020\MVC\Hao_Hao\Hao_Hao\obj\Release\net8.0\win-x64\PubTmp\Out\Hao_Hao.exe

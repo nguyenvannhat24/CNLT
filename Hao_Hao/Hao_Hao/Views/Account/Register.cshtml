@@ -1,0 +1,92 @@
+﻿@model Hao_Hao.Models.RegisterViewModel
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="~/css/style - Copy (2).css" />
+</head>
+<body>
+    <div class="flex-center gap40px center backgroudwihte">
+        <div class="">
+            <img src="~/img/Pharmacy.png" alt="" />
+        </div>
+        <div id="containerLogin">
+            <h1 style="color: rgba(45, 152, 42, 1)">Đăng Kí</h1>
+
+            <!-- Hiển thị thông báo lỗi nếu có lỗi trong ModelState -->
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    </ul>
+                </div>
+            }
+
+            <!-- Sử dụng POST thay vì GET -->
+            <form asp-action="Register" method="post" class="gap40px">
+                <label for="FullName">
+                    Tên:
+                    <input id="FullName" name="FullName" type="text" asp-for="FullName" />
+                    <p style="color: red">*</p>
+                </label>
+                @Html.ValidationMessageFor(model => model.FullName)
+
+                <label for="PhoneNumber">
+                    Số điện thoại:
+                    <input id="PhoneNumber" name="PhoneNumber" type="text" asp-for="PhoneNumber" />
+                    <p style="color: red">*</p>
+                </label>
+                @Html.ValidationMessageFor(model => model.PhoneNumber)
+
+                <label for="Email">
+                    Email:
+                    <input id="Email" name="Email" type="text" asp-for="Email" />
+                    <p style="color: red">*</p>
+                </label>
+                @Html.ValidationMessageFor(model => model.Email)
+
+                <label for="Address">
+                    Địa chỉ:
+                    <input id="Address" name="Address" type="text" asp-for="Address" />
+                </label>
+                @Html.ValidationMessageFor(model => model.Address)
+
+                <div class="remember-container">
+                    <label id="sex"> Giới tính:</label>
+                    <input type="radio" id="male" name="Gender" value="male" asp-for="Gender" />
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="Gender" value="female" asp-for="Gender" />
+                    <label for="female">Nữ</label>
+                </div>
+
+                <label for="Password">
+                    Mật Khẩu:
+                    <input id="Password" name="Password" type="password" asp-for="Password" />
+                </label>
+                @Html.ValidationMessageFor(model => model.Password)
+
+                <label for="ConfirmPassword">
+                    Nhập lại mật khẩu:
+                    <input id="ConfirmPassword" name="ConfirmPassword" type="password" asp-for="ConfirmPassword" />
+                </label>
+                @Html.ValidationMessageFor(model => model.ConfirmPassword)
+
+                <button type="submit">HOÀN TẤT</button>
+            </form>
+
+            <p>đã có tài khoản?</p>
+            <a href="@Url.Action("Login", "Account")" style="color: rgba(45, 152, 42, 1)">Đăng Nhập ngay</a>
+        </div>
+    </div>
+</body>
+</html>

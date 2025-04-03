@@ -1,0 +1,45 @@
+﻿@model List<Hao_Hao.Models.SanPham>
+
+<h2>Danh sách sản phẩm</h2>
+<table border="1" id="productTable">
+    <tr>
+        <th>ID</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.TenSanPham</td>
+            <td>@item.Gia</td>
+        </tr>
+    }
+</table>
+
+<!-- Nút Xem thêm -->
+<button id="loadMoreBtn">Xem thêm</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#loadMoreBtn").click(function () {
+            $.ajax({
+                url: "/Home/GetAllProducts", // Gọi API từ Controller
+                type: "GET",
+                success: function (data) {
+                    let rows = "";
+                    data.forEach(function (sp) {
+                        rows += `<tr>
+                                    <td>${sp.id}</td>
+                                    <td>${sp.tenSanPham}</td>
+                                    <td>${sp.gia}</td>
+                                </tr>`;
+                    });
+                    $("#productTable").html(rows); // Thay thế toàn bộ bảng bằng dữ liệu mới
+                    $("#loadMoreBtn").hide(); // Ẩn nút "Xem thêm" sau khi load xong
+                }
+            });
+        });
+    });
+</script>

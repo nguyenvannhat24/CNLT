@@ -1,0 +1,251 @@
+body {
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+.container {
+  width: 1400px;
+  height: 3047px;
+  margin: auto; /* Căn giữa theo chiều ngang */
+}
+
+#ListMedicine {
+  margin-top: 50px;
+  width: 1199px;
+  height: 330px;
+}
+.flex-center-colum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.magin-auto {
+  display: block;
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 5 cột có kích thước bằng nhau */
+  grid-template-rows: repeat(2, 1fr);
+  /* Khoảng cách giữa các ô */
+  width: 100%; /* Độ rộng tối đa */
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 1) z;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #a7a4a4;
+  width: 155px;
+  height: 152px;
+}
+.grid-item p {
+  margin: 0px;
+}
+.gap10px {
+  gap: 10px;
+}
+#product53 {
+  width: 1269.62px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.product53-item {
+  background-color: rgba(255, 255, 255, 1) z;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #aca5a5;
+  width: 222.72px;
+  height: 363.37px;
+}
+
+.btnBuyProduct {
+  text-align: center;
+  width: 195px;
+  height: 28px;
+  padding-top: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(195, 192, 192);
+  text-align: center;
+  background-color: transparent;
+}
+
+#product53 p {
+  width: 90%;
+  text-align: start;
+  margin: 0;
+}
+#xemThem {
+  text-align: center;
+  width: 290px;
+  height: 47px;
+  padding-top: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(43, 155, 24);
+  text-align: center;
+  color: rgb(43, 155, 24);
+  background-color: transparent;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+#detailProduct {
+  width: 1253px;
+  height: 631px;
+  margin-bottom: 20px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-center-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#formBuyProduct {
+  width: 575px;
+  height: 478px;
+}
+.quantity-btn {
+  width: 56.84px;
+  height: 29.75px;
+  border: none;
+  background-color: rgba(45, 152, 42, 1);
+}
+#selectQuality {
+  display: flex;
+  gap: -10px;
+}
+.radius-left {
+  border-radius: 20px 0px 0px 20px;
+}
+.radius-right {
+  border-radius: 0px 20px 20px 0px;
+}
+#quantity {
+  border: 1px solid rgba(45, 152, 42, 1);
+  width: 50px;
+  text-align: center;
+}
+/* ẩn tăng giảm */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity-input {
+  -moz-appearance: textfield; /* Ẩn trên Firefox */
+}
+#Choose-to-buy {
+  width: 160px;
+  height: 69px;
+  background-color: rgba(224, 248, 228, 1);
+  color: rgba(45, 152, 42, 1);
+  border-radius: 10px;
+  margin-left: 30px;
+  border: 2px solid rgba(45, 152, 42, 1);
+}
+#Add-cart {
+  width: 284px;
+  height: 69px;
+  background-color: rgba(45, 152, 42, 1);
+  color: white;
+  border-radius: 10px;
+  margin-left: 30px;
+  border: none;
+}
+.flex-colum-start {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#informationProduct {
+  padding: 40px;
+
+  width: 1165px;
+  height: 1015px;
+  border-radius: 5px;
+  border: 3px solid rgb(193, 183, 183);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#informationProduct p {
+  font-size: 25px;
+  line-height: 50px;
+}
+.flex-colum {
+}
+#xemThem {
+  width: 164.04px;
+  height: 44px;
+}
+.grid1-4-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.product-item {
+  width: 212.72px;
+  height: 353.37px;
+  padding: 10px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.themgiohang {
+  border-radius: 5px;
+  background-color: transparent;
+  width: 90%;
+  border: 1px solid rgb(189, 181, 181);
+}
+.themgiohang:hover {
+  background-color: rgba(45, 152, 42, 1);
+}
+#Nu {
+  margin-left: 50px;
+  color: rgba(45, 152, 42, 1);
+}
+.informationComment input[type="radio"] {
+  accent-color: rgba(45, 152, 42, 1);
+}
+.informationComment input[type="text"] {
+  width: 255px;
+  height: 33px;
+
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#phoneNumber {
+  margin-left: 30px;
+}
+#comment {
+  display: block;
+  margin: auto;
+  width: 1032px;
+  height: 153px; /* Tăng chiều cao */
+  padding: 5px;
+  padding-right: 5px; /* Đẩy nội dung sát phải */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left; /* Căn chữ sang trái */
+  resize: none; /* Ngăn chặn thay đổi kích thước */
+}
+.commentform button[type="submit"] {
+  width: 192px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(45, 152, 42, 1);
+  margin-left: 73.6%;
+}
+#loadMoreBtn{
+
+}

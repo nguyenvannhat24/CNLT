@@ -1,0 +1,141 @@
+/* Định dạng bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header bảng */
+th {
+  background-color: rgba(45, 152, 42, 1);
+  color: white;
+  text-align: left;
+  padding: 12px;
+}
+
+/* Dòng trong bảng */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover cho từng dòng */
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Ảnh sản phẩm */
+img {
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* Nút Xóa */
+.btn-danger {
+  background-color: rgba(45, 152, 42, 1);
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: rgba(45, 152, 42, 1);
+}
+
+/* Phần tiêu đề */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Căn giữa nội dung */
+.center {
+  display: flex;
+  justify-content: center;
+  width: 966px;
+  margin-left: 50px;
+}
+.gird3_2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+.BuyAll {
+  width: 311.78px;
+
+  height: 261px;
+  margin-right: 50px;
+}
+.contain {
+  width: 1440px;
+  margin: auto;
+}
+.text-align {
+  display: flex;
+  justify-content: space-around;
+}
+.Flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Tang {
+  width: 16px;
+  height: 20px;
+  border-top-right-radius: 10px; /* Bo góc trên bên phải */
+  border-bottom-right-radius: 10px; /* Bo góc dưới bên phải */
+  border: 1px solid rgb(10, 10, 10);
+  text-align: center;
+  cursor: pointer;
+}
+.Giam {
+  text-align: center;
+  width: 16px;
+  height: 20px;
+  border: 1px solid rgb(10, 10, 10);
+  border-top-left-radius: 10px; /* Bo góc trên bên phải */
+  border-bottom-left-radius: 10px; /* Bo góc dưới bên phải */
+  cursor: pointer;
+}
+
+.Giam:hover,
+.Tang:hover {
+  background-color: rgba(45, 152, 42, 1);
+}
+.soLuong {
+  width: 90px;
+  height: 20px;
+  border: 1px solid rgb(10, 10, 10);
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.grid1-4-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.product-item {
+  width: 212.72px;
+  height: 353.37px;
+  padding: 10px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-success {
+    width: 146px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #267626;
+}

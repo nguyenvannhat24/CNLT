@@ -1,0 +1,19 @@
+﻿@model List<SanPhamDTO>
+<h1>đã thanh toán thành công</h1>
+<h1> đây là danh sách sản phẩm</h1>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>ID: @item.id, Số lượng: @item.soLuong</li>
+    }
+</ul>
+<h1>@ViewBag.danhSachSanPham</h1>
+@if (TempData["Message"] != null)
+{
+    <script>
+        var message = "@TempData["Message"]";
+        var textarea = document.createElement("textarea");
+        textarea.innerHTML = message;
+        alert(textarea.value);
+    </script>
+}

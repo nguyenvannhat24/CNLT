@@ -1,0 +1,87 @@
+﻿@model List<Hao_Hao.Models.LichSuMuaHangView>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .table thead {
+                background-color: rgba(45, 152, 42, 1);
+                color: white;
+                font-weight: bold;
+            }
+
+            .table th, .table td {
+                padding: 12px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .table tr:hover {
+                background-color: #e9ecef;
+            }
+
+            .table img {
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            }
+    </style>
+
+</head>
+<body>
+    <h2>Lịch Sử Mua Hàng</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Hình Ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Số Lượng</th>
+                <th>Thời Gian Mua</th>
+                <th>Tổng Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="@item.HinhAnh" alt="Ảnh sản phẩm" width="80"></td>
+                    <td>@item.TenHang</td>
+                    <td>@item.SoLuong</td>
+                    <td>@item.ThoiGianMua.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.SoTien.ToString("N0") VND</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+

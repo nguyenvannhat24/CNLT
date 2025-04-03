@@ -1,0 +1,9 @@
+﻿<h3>Thông tin cập nhật</h3>
+<p>ID người dùng: @ViewBag.id</p>
+<p>Quyền được chọn: @ViewBag.Quyen</p>
+@if (TempData["Message"] != null)
+{
+    <script>
+        alert("@TempData["Message"]");
+    </script>
+}

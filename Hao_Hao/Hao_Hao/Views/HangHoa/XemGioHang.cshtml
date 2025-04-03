@@ -1,0 +1,292 @@
+﻿@model List<Hao_Hao.Models.GioHangViewModel>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="~/css/style2.css" />
+    <style>
+        .btn-success {
+            width: 146px;
+            height: 45px;
+            border-radius: 10px;
+            background-color: #267626;
+        }
+
+        .themgiohang {
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #267626;
+        }
+        /* Modal */
+        .modal {
+            display: none; /* Ẩn modal mặc định */
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h2>🛒 Giỏ Hàng Của Bạn</h2>
+        <div class="gird3_2">
+            <div>
+                <div class="center">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Hình ảnh</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Tổng</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr data-id="@item.SanPhamId">
+                                    <td>@item.TenSanPham</td>
+                                    <td><img src="@item.HinhAnh" width="50" height="50" /></td>
+                                    <td>
+                                        <div class="Flex-center">
+                                            <button class="Giam">-</button>
+                                            <h3 class="soLuong">@item.SoLuong</h3>
+                                            <button class="Tang">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="GiaSP">@item.Gia</td>
+                                    <td class="tong">0</td> <!-- Chưa tính tổng, sẽ cập nhật bằng JS -->
+                                    <td>
+                                        <a asp-action="XoaSanPhamKhoiGio"
+                                           asp-route-id="@item.SanPhamId"
+                                           class="btn-danger">
+                                            Xóa
+                                        </a>
+                                        <a asp-action="ThanhToan"
+                                           asp-route-spId="@item.SanPhamId"
+                                           class="btn-danger">
+                                            Thanh toán
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="BuyAll">
+                <h1>📄 Đơn hàng</h1>
+                <div class="text-align">
+                    <p>Tổng tiền</p>
+                    <p id="TongTienien">150000đ</p>
+                </div>
+                <div class="text-align">
+                    <p>Giảm Giá</p>
+                    <p id="GiamGiaGiamGia">0đ</p>
+                </div>
+                <div class="text-align">
+                    <h2>Tạm Tính</h2>
+                    <h2 id="TamTinhinh">1500đ</h2>
+                </div>
+                <form id="thanhToanForm" asp-action="ThanhToanTatCa" asp-controller="HangHoa" method="post">
+                    <input type="hidden" name="danhSachSanPham" id="danhSachSanPham" />
+                    <button type="submit" class="btn-success">Thanh toán tất cả</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h1>Sản phẩm khác</h1>
+            <div class="grid1-4-5">
+                @foreach (var sp in ViewBag.sanpham)
+                {
+                    <div class="product-item">
+                        <img src="@sp.HinhAnh" alt="@sp.TenSanPham" />
+                        <p>@sp.TenSanPham</p>
+                        <p style="width: 100%; font-weight: bold">@sp.Gia.ToString("N0")đ</p>
+                        <form asp-controller="HangHoa" asp-action="ThemGioHang" method="post">
+                            <input type="hidden" name="tenHang" value="@sp.TenSanPham" />
+                            <input type="hidden" name="MaHang" value="@sp.Id" />
+                            <input type="hidden" name="soLuong" value="1" />
+                            <button class="themgiohang" type="submit">Thêm giỏ hàng</button>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal QR Code -->
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Quét mã QR để thanh toán</h3>
+            <img id="qrImage" src="" alt="Mã QR" style="width:300px;height:300px;" />
+            <p>Vui lòng xác nhận thanh toán qua mã QR.</p>
+            <div style="margin-top: 20px;">
+                <button id="confirmPayment" class="btn btn-success">OK</button>
+                <button id="cancelPayment" class="btn btn-danger">Hủy</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hàm cập nhật tổng tiền giỏ hàng
+            function updateTotal() {
+                let tongTien = 0;
+                let giamGia = 0;
+                let tamTinh = 0;
+
+                document.querySelectorAll("tbody tr").forEach(row => {
+                    let soLuongEl = row.querySelector(".soLuong");
+                    let giaSpEl = row.querySelector(".GiaSP");
+                    let tongEl = row.querySelector(".tong");
+
+                    let soLuong = parseInt(soLuongEl.textContent);
+                    let giaSanPham = parseInt(giaSpEl.textContent.replace("đ", "").trim());
+                    let tongGia = soLuong * giaSanPham;
+
+                    tongEl.textContent = tongGia.toLocaleString() + " đ";
+
+                    tongTien += tongGia;
+                });
+
+                tamTinh = tongTien - giamGia;
+
+                document.getElementById("TongTienien").textContent = tongTien.toLocaleString() + " đ";
+                document.getElementById("GiamGiaGiamGia").textContent = giamGia.toLocaleString() + " đ";
+                document.getElementById("TamTinhinh").textContent = tamTinh.toLocaleString() + " đ";
+            }
+
+            // Xử lý tăng/giảm số lượng
+            document.querySelectorAll(".Giam").forEach(button => {
+                button.addEventListener("click", function () {
+                    let soLuongEl = this.closest("tr").querySelector(".soLuong");
+                    let soLuong = parseInt(soLuongEl.textContent);
+                    if (soLuong > 1) {
+                        soLuongEl.textContent = soLuong - 1;
+                        updateTotal();
+                    }
+                });
+            });
+
+            document.querySelectorAll(".Tang").forEach(button => {
+                button.addEventListener("click", function () {
+                    let soLuongEl = this.closest("tr").querySelector(".soLuong");
+                    let soLuong = parseInt(soLuongEl.textContent);
+                    soLuongEl.textContent = soLuong + 1;
+                    updateTotal();
+                });
+            });
+
+            // Cập nhật tổng tiền ngay khi tải trang
+            updateTotal();
+
+            // Xử lý khi nhấn nút "Thanh toán tất cả"
+            document.querySelector(".btn-success").addEventListener("click", function (event) {
+                event.preventDefault(); // Ngừng form gửi đi ngay lập tức
+
+                console.log("Đã bấm thanh toán tất cả"); // Debug check
+
+                // Lấy tổng tiền từ giỏ hàng
+                let tongTien = document.getElementById("TongTienien").textContent.replace("đ", "").trim();
+
+                // Tạo URL cho mã QR
+                let url = `/HangHoa/GenerateQRCode?totalAmount=${tongTien}`;
+                let qrImageSrc = url;
+
+                console.log("QR Image Source:", qrImageSrc); // Debug check URL QR
+
+                // Đặt ảnh mã QR vào modal
+                document.getElementById("qrImage").src = qrImageSrc;
+                document.getElementById("qrModal").style.display = "block"; // Hiển thị modal QR
+            });
+
+            // Xử lý khi nhấn nút "Hủy" trong modal (đóng modal)
+            document.getElementById("cancelPayment").addEventListener("click", function () {
+                closeModal();
+            });
+
+            // Đóng modal QR
+            function closeModal() {
+                document.getElementById("qrModal").style.display = "none"; // Đảm bảo modal đóng đúng
+            }
+
+            // Xử lý khi nhấn nút "OK" trong modal (tiến hành thanh toán)
+            document.getElementById("confirmPayment").addEventListener("click", function () {
+                // Gửi dữ liệu thanh toán
+                let danhSachSanPham = [];
+
+                // Thu thập dữ liệu giỏ hàng
+                document.querySelectorAll("tr").forEach(row => {
+                    let sanPhamId = row.getAttribute("data-id"); // Lấy ID sản phẩm từ <tr>
+                    let soLuong = row.querySelector(".soLuong")?.textContent.trim(); // Lấy số lượng
+                    if (sanPhamId && soLuong) {
+                        danhSachSanPham.push({
+                            id: sanPhamId,
+                            soLuong: soLuong
+                        });
+                    }
+                });
+
+                // Gửi dữ liệu thanh toán qua POST
+                let form = document.createElement("form");
+                form.method = "POST";
+                form.action = "/HangHoa/ThanhToanTatCa";
+
+                // Tạo trường ẩn chứa danh sách sản phẩm
+                let input = document.createElement("input");
+                input.type = "hidden";
+                input.name = "danhSachSanPham";
+                input.value = JSON.stringify(danhSachSanPham); // Chuyển thành JSON
+                form.appendChild(input);
+
+                // Thêm form vào document và gửi đi
+                document.body.appendChild(form);
+                form.submit(); // Gửi form đi để thực hiện thanh toán
+            });
+        });
+
+
+    </script>
+</body>
+</html>
+@if (TempData["Message"] != null)
+{
+    <script>
+        var message = "@TempData["Message"]";
+        var textarea = document.createElement("textarea");
+        textarea.innerHTML = message;
+        alert(textarea.value);
+    </script>
+}

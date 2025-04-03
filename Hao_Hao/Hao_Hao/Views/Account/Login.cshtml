@@ -1,0 +1,59 @@
+﻿@model Hao_Hao.Models.LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="~/css/style - Copy.css" />
+</head>
+<body>
+    <div class="flex-center gap40px center backgroudwihte">
+        <div class="">
+            <img src="~/img/Pharmacy.png" alt="Logo" style=" margin-bottom: 20px;" />
+        </div>
+        <div id="containerLogin">
+            <h1 style="color: rgba(45, 152, 42, 1)">Đăng Nhập</h1>
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="text-danger">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <p>@error.ErrorMessage</p>
+                    }
+                </div>
+            }
+
+            <form asp-action="Login" method="post" class="gap40px">
+                <label for="Email">
+                    Email:
+                    <input id="Email" type="email" name="Email" asp-for="Email" />
+                    <p style="color: red">*</p>
+                </label>
+
+                <label for="Password">
+                    Mật Khẩu:
+                    <input id="Password" name="Password" type="password" asp-for="Password" />
+                    <p style="color: red">*</p>
+                </label>
+
+                <div class="remember-container">
+                    
+                    <a href="@Url.Action("Forgot", "Account")" style="color: rgba(45, 152, 42, 1)">Quên mật khẩu</a>
+                </div>
+             
+
+                <button type="submit">ĐĂNG NHẬP</button>
+            </form>
+
+            <p>Chưa có tài khoản?</p>
+            <a href="@Url.Action("Register", "Account")" style="color: rgba(45, 152, 42, 1)">Đăng ký ngay</a>
+            <a href="@Url.Action("Index", "Home")" style="text-decoration:none ; font-weight:bold; margin-top: 20px"><< Trở về  </a>
+        </div>
+    </div>
+</body>
+</html>

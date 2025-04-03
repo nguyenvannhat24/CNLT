@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xác nhận</title>
+    <link rel="stylesheet" href="~/css/style - Copy (2).css" />
+</head>
+<body>
+    <div class="flex-center gap40px center backgroudwihte">
+        <div class="">
+            <img src="~/img/Pharmacy.png" alt="" />
+        </div>
+        <div id="containerLoginComfirm">
+            <h1 style="color: rgba(45, 152, 42, 1)">Đăng Kí</h1>
+            <label for="numberComfirm">
+                Nhập mã xác nhận:
+                <input type="text" name="" id="" />
+            </label>
+            <p>
+                Mã xác minh OTP đã gửi đến số điện thoại của bạn. Vui lòng kiểm tra
+                điện thoại nhé.
+            </p>
+            <p>
+                chưa nhận được mã?<a href="#" style="color: rgba(45, 152, 42, 1)">Gửi lại mã (60s)</a>
+            </p>
+            <button type="submit">HOÀN TẤT</button>
+            <a href="@Url.Action("Register", "Account")"> &lt;&lt; Trở về </a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,437 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Hao_Hao.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Hao_Hao.xjlogyjurc.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\css\\style - Copy (2).css",
+      "PackagePath": "staticwebassets\\css\\style - Copy (2).css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\css\\style - Copy.css",
+      "PackagePath": "staticwebassets\\css\\style - Copy.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\css\\styte1.css",
+      "PackagePath": "staticwebassets\\css\\styte1.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\4 con chó.zip",
+      "PackagePath": "staticwebassets\\img\\4 con chó.zip"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Banner ưu đãi.png",
+      "PackagePath": "staticwebassets\\img\\Banner ưu đãi.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Banner.png",
+      "PackagePath": "staticwebassets\\img\\Banner.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Firer.png",
+      "PackagePath": "staticwebassets\\img\\Firer.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Google.png",
+      "PackagePath": "staticwebassets\\img\\Google.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Icon.png",
+      "PackagePath": "staticwebassets\\img\\Icon.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\LogoFire1.jpg",
+      "PackagePath": "staticwebassets\\img\\LogoFire1.jpg"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Pharmacy.png",
+      "PackagePath": "staticwebassets\\img\\Pharmacy.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Rectangle 17.png",
+      "PackagePath": "staticwebassets\\img\\Rectangle 17.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Rectangle75.png",
+      "PackagePath": "staticwebassets\\img\\Rectangle75.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Thuoc.png",
+      "PackagePath": "staticwebassets\\img\\Thuoc.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Thuoc2.png",
+      "PackagePath": "staticwebassets\\img\\Thuoc2.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\Vector.jpg",
+      "PackagePath": "staticwebassets\\img\\Vector.jpg"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\a1.png",
+      "PackagePath": "staticwebassets\\img\\a1.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\a2.png",
+      "PackagePath": "staticwebassets\\img\\a2.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\avata.png",
+      "PackagePath": "staticwebassets\\img\\avata.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\b1.png",
+      "PackagePath": "staticwebassets\\img\\b1.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\b2.png",
+      "PackagePath": "staticwebassets\\img\\b2.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\b3.png",
+      "PackagePath": "staticwebassets\\img\\b3.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\b4.png",
+      "PackagePath": "staticwebassets\\img\\b4.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\banner-catepng.png",
+      "PackagePath": "staticwebassets\\img\\banner-catepng.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\boxchat.png",
+      "PackagePath": "staticwebassets\\img\\boxchat.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\c1.png",
+      "PackagePath": "staticwebassets\\img\\c1.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\c2.png",
+      "PackagePath": "staticwebassets\\img\\c2.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\c3.png",
+      "PackagePath": "staticwebassets\\img\\c3.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\c5.png",
+      "PackagePath": "staticwebassets\\img\\c5.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\detailProduct.png",
+      "PackagePath": "staticwebassets\\img\\detailProduct.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\facebook.png",
+      "PackagePath": "staticwebassets\\img\\facebook.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\logoFire.jpg",
+      "PackagePath": "staticwebassets\\img\\logoFire.jpg"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\mail.png",
+      "PackagePath": "staticwebassets\\img\\mail.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\momo.png",
+      "PackagePath": "staticwebassets\\img\\momo.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\napas.png",
+      "PackagePath": "staticwebassets\\img\\napas.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\thuoc1.png",
+      "PackagePath": "staticwebassets\\img\\thuoc1.png"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\img\\tiktok_live_studio_downloader-v0.0.1-wid-8ThKcN9ZEc1.exe",
+      "PackagePath": "staticwebassets\\img\\tiktok_live_studio_downloader-v0.0.1-wid-8ThKcN9ZEc1.exe"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\js\\java.js",
+      "PackagePath": "staticwebassets\\js\\java.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\js\\java1.js",
+      "PackagePath": "staticwebassets\\js\\java1.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\js\\scripProduct.js",
+      "PackagePath": "staticwebassets\\js\\scripProduct.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\HieuThuoc\\Hao_Hao\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Hao_Hao.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Hao_Hao.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Hao_Hao.props",
+      "PackagePath": "build\\Hao_Hao.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Hao_Hao.props",
+      "PackagePath": "buildMultiTargeting\\Hao_Hao.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Hao_Hao.props",
+      "PackagePath": "buildTransitive\\Hao_Hao.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
