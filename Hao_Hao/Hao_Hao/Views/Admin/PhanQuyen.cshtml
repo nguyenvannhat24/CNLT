@@ -1,0 +1,65 @@
+﻿@model UserView
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân Quyền</title>
+    <link rel="stylesheet" href="~/css/Amind.css" />
+</head>
+<style>
+    select, option {
+        background-color:transparent;
+        width:100%;
+    }
+
+    option{
+        width: 100%;
+    }
+    
+</style>
+<body>
+    <div class="contain">
+        <p>Phân quyền</p>
+        <h3 class="margin" style="width: 200px">Chỉnh sửa quyền người dùng</h3>
+        <div class="table">
+            <form asp-action="CapNhat" asp-controller="Admin" method="post">
+                <input type="hidden" name="Id" value="@Model.Id" />
+                <table>
+                    <th>Stt</th>
+                    <th>Tên người dùng</th>
+                    <th>Email</th>
+                    <th>Quyền</th>
+                    <tr>
+                        <td>1</td>
+                        <td>@Model.Name</td>
+                        <td>@Model.Email</td>
+                        <td>
+                            <select name="SelectedRoleIds" multiple>
+                                @foreach (var role in Model.AvailableRoles)
+                                {
+                                    // ko hiển thị quyền admin
+                                    if(role.Id != 1){  
+                                    <option value="@role.Id " selected="@(Model.SelectedRoleIds.Contains(role.Id) ? "selected" : null)">
+
+                                        @role.Name
+                                    </option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Cập nhật quyền</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+@if (TempData["Message"] != null)
+{
+    <script>
+        alert("@TempData["Message"]");
+    </script>
+}

@@ -1,0 +1,51 @@
+﻿@model Hao_Hao.Models.ForgotPasswordViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="~/css/style - Copy.css" />
+</head>
+<body>
+    <div class="flex-center gap40px center backgroudwihte">
+        <div class="">
+            <img src="~/img/Pharmacy.png" alt="" />
+        </div>
+        <div id="containerLogin">
+            <h1 style="color: rgba(45, 152, 42, 1)">Quên mật khẩu</h1>
+            <form method="post" class="gap40px">
+                <div class="flex-center gap20px">
+                    <!-- Trường Số điện thoại hoặc email -->
+                    <label style="width: 171px;" for="Email">Số điện thoại hoặc email:</label>
+                    <input id="Email" name="email" type="email" value="@Model.Email" required />
+                    <p style="color: red">*</p>
+
+                </div>
+                <!-- Hiển thị lỗi nếu có -->
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="text-danger">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p>@error.ErrorMessage</p>
+                        }
+                    </div>
+                }
+
+                <button type="submit">Gửi Mã</button>
+            </form>
+
+            <!-- Liên kết trở về -->
+            <a class="btnBack" href="@Url.Action("Register", "Account")"><< Trở về</a>
+
+        </div>
+    </div>
+</body>
+</html>
+
+

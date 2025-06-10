@@ -1,0 +1,429 @@
+﻿@model List<Hao_Hao.Models.SanPham>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="~/css/style1.css"  />
+    <style>
+        body {
+        margin: auto;
+        background-color: rgba(255, 255, 255, 1);
+        }
+
+        .container {
+        width: 1400px;
+        height: auto;
+        margin: auto; /* Căn giữa theo chiều ngang */
+        }
+
+        #ListMedicine {
+        margin-top: 50px;
+        width: 1199px;
+        height: 330px;
+        }
+
+        .flex-center-colum {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .magin-auto {
+        display: block;
+        margin: 0 auto; /* Căn giữa theo chiều ngang */
+        }
+
+        .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* 5 cột có kích thước bằng nhau */
+        grid-template-rows: repeat(2, 1fr);
+        /* Khoảng cách giữa các ô */
+        width: 100%; /* Độ rộng tối đa */
+        }
+
+        .grid-item {
+        background-color: rgba(255, 255, 255, 1) ;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #a7a4a4;
+        width: 155px;
+        height: 152px;
+        }
+
+        .grid-item p {
+        margin: 0px;
+        }
+
+        .gap10px {
+        gap: 10px;
+        }
+
+        #product53 {
+        width: 1269.62px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .product53-item {
+        background-color: rgba(255, 255, 255, 1) z;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #aca5a5;
+        width: 222.72px;
+        height: 363.37px;
+        }
+
+        .btnBuyProduct {
+        text-align: center;
+        width: 195px;
+        height: 28px;
+        padding-top: 2px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid rgb(195, 192, 192);
+        text-align: center;
+        background-color: transparent;
+        }
+
+        #product53 p {
+        width: 90%;
+        text-align: start;
+        margin: 0;
+        }
+
+        #xemThem {
+        text-align: center;
+        width: 290px;
+        height: 47px;
+        padding-top: 2px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid rgb(43, 155, 24);
+        text-align: center;
+        color: rgb(43, 155, 24);
+        background-color: transparent;
+        margin-left: 40%;
+        margin-top: 20px;
+        }
+
+        #detailProduct {
+        width: 1253px;
+        height: 631px;
+        margin-bottom: 20px;
+        }
+
+        .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+        .flex-center-start {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        #formBuyProduct {
+        width: 575px;
+        height: 478px;
+        }
+
+        .quantity-btn {
+        width: 56.84px;
+        height: 29.75px;
+        border: none;
+        background-color: rgba(45, 152, 42, 1);
+        }
+
+        #selectQuality {
+        display: flex;
+        gap: -10px;
+        }
+
+        .radius-left {
+        border-radius: 20px 0px 0px 20px;
+        }
+
+        .radius-right {
+        border-radius: 0px 20px 20px 0px;
+        }
+
+        #quantity {
+        border: 1px solid rgba(45, 152, 42, 1);
+        width: 50px;
+        text-align: center;
+        }
+        /* ẩn tăng giảm */
+        .quantity-input::-webkit-inner-spin-button,
+        .quantity-input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        .quantity-input {
+        -moz-appearance: textfield; /* Ẩn trên Firefox */
+        }
+
+        #Choose-to-buy {
+        width: 160px;
+        height: 69px;
+        background-color: rgba(224, 248, 228, 1);
+        color: rgba(45, 152, 42, 1);
+        border-radius: 10px;
+        margin-left: 30px;
+        border: 2px solid rgba(45, 152, 42, 1);
+        }
+
+        #Add-cart {
+        width: 284px;
+        height: 69px;
+        background-color: rgba(45, 152, 42, 1);
+        color: white;
+        border-radius: 10px;
+        margin-left: 30px;
+        border: none;
+        }
+
+        .flex-colum-start {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+
+        #informationProduct {
+        padding: 40px;
+        width: 1165px;
+        height: 1015px;
+        border-radius: 5px;
+        border: 3px solid rgb(193, 183, 183);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #informationProduct p {
+        font-size: 25px;
+        line-height: 50px;
+        }
+
+        .flex-colum {
+        }
+
+        #xemThem {
+        width: 164.04px;
+        height: 44px;
+        }
+
+        .grid1-4-5 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        }
+
+        .product-item {
+        width: 212.72px;
+        height: 353.37px;
+        padding: 10px;
+        background-color: rgba(242, 242, 242, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .themgiohang {
+        border-radius: 5px;
+        background-color: transparent;
+        width: 90%;
+        border: 1px solid rgb(189, 181, 181);
+        }
+
+        .themgiohang:hover {
+        background-color: rgba(45, 152, 42, 1);
+        }
+
+        #Nu {
+        margin-left: 50px;
+        color: rgba(45, 152, 42, 1);
+        }
+
+        .informationComment input[type="radio"] {
+        accent-color: rgba(45, 152, 42, 1);
+        }
+
+        .informationComment input[type="text"] {
+        width: 255px;
+        height: 33px;
+        margin-left: 20px;
+        border-radius: 10px;
+        }
+
+        #phoneNumber {
+        margin-left: 30px;
+        }
+
+        #comment {
+        display: block;
+        margin: auto;
+        width: 1032px;
+        height: 153px; /* Tăng chiều cao */
+        padding: 5px;
+        padding-right: 5px; /* Đẩy nội dung sát phải */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: left; /* Căn chữ sang trái */
+        resize: none; /* Ngăn chặn thay đổi kích thước */
+        }
+
+        .commentform button[type="submit"] {
+        width: 192px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgba(45, 152, 42, 1);
+        margin-left: 73.6%;
+        }
+
+        #loadMoreBtn {
+        margin-left:50%;
+        margin-top: 20px;
+        border: 1px solid rgba(45, 152, 42, 1);
+        border-radius: 5px;
+        background-color: rgba(45, 152, 42, 1);
+        color:white;
+        width:150px;
+        }
+
+
+        .product{
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .product:hover {
+                transform: scale(1.15);
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>Trang Chủ/Thuốc</p>
+        </div>
+        <div><img class="magin-auto" src="~/img/banner-catepng.png" alt="" /></div>
+        <div id="ListMedicine" class="magin-auto grid">
+            <div class="grid-item flex-center-colum gap10px" onclick="hienthi()">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src ="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+            <div s class="grid-item flex-center-colum gap10px">
+                <img src="~/img/thuoc1.png" alt="" />
+                <p>Giảm đau, hạ sốt, kháng sinh</p>
+            </div>
+        </div>
+        <!-- phần 2 -->
+
+        <div>
+            <h1>53 Sản Phẩm</h1>
+            <div id="product53" class="magin-auto ">
+                @for (var i = 0; i < Model.Count; i++)
+                {
+                    <div class="product53-item flex-center-colum gap10px product" style="display: @(i < 3 ? "block" : "none")">
+                        <div><img style="width: 183px;" class="ChiTietSanPham" idSp="@Model[i].Id" src="@Model[i].HinhAnh" alt="@Model[i].TenSanPham" /></div>
+                        <p>@Model[i].TenSanPham</p>
+                        <p style="font-weight: bolder; font-size: 20px">@Model[i].Gia</p>
+                        <form asp-controller="HangHoa" asp-action="ThemGioHang" method="post">
+                            <input type="hidden" name="tenHang" value="@Model[i].TenSanPham" />
+                            <input type="hidden" name="MaHang" value="@Model[i].Id" />
+                            <input type="hidden" name="soLuong" value="1" />
+                            <button class="btnBuyProduct vien-hover" type="submit">Thêm giỏ hàng</button>
+                        </form>
+                    </div>
+                }
+            </div>
+      </div>
+      <div>
+            </button> <button id="loadMoreBtn">Xem thêm</button>
+      </div>
+      
+
+    </div>
+    <script src="~/js/scripProduct.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#loadMoreBtn").click(function() {
+                $(".product53-item").show(); // Hiển thị toàn bộ sản phẩm
+                $(this).hide(); // Ẩn nút "Xem thêm" sau khi bấm
+            });
+        });
+
+        //
+    
+                   document.addEventListener("click", function(event) {
+            // Kiểm tra xem phần tử được click có class "ChiTietSanPham" không
+            if (event.target.classList.contains("ChiTietSanPham")) {
+                let idSanPham = event.target.getAttribute("idSp"); // Lấy ID sản phẩm từ thuộc tính idSp
+                console.log("ID Sản phẩm:", idSanPham);
+               // truyên id vào cotroler HangHoa methor ChiTietSanPham
+               window.location.href = `/HangHoa/ChiTietSanPham/${idSanPham}`;
+            }
+        });
+
+
+
+
+    
+    </script>
+   
+  </body>
+</html>
+@if (TempData["Message"] != null)
+{
+    <script>
+        var message = "@TempData["Message"]";
+        var textarea = document.createElement("textarea");
+        textarea.innerHTML = message;
+        alert(textarea.value);
+    </script>
+}

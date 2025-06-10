@@ -1,0 +1,82 @@
+﻿@model List<Hao_Hao.Models.UserView>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Người Dùng</title>
+    <link rel="stylesheet" href="~/css/Amind.css" asp-append-version="true" />
+</head>
+<style>
+    .flex_center {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5%;
+    }
+</style>
+<body>
+    <div class="contain">
+        <p>Phân quyền</p>
+        <h3 class="margin" style="width: 200px">Danh Sách Người Dùng</h3>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stt</th>
+                        <th>Tên người dùng</th>
+                        <th>Email</th>
+                        <th>Quyền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>@(i + 1)</td>
+                            <td>@Model[i].Name</td>
+                            <td>@Model[i].Email</td>
+                            <td>
+                                @foreach (var role in Model[i].Role)
+                                {
+                                    <div class="flex_center">
+                                        @role.Name
+
+
+                                        <a class="delete-btn" asp-action="XoaQuyen" asp-controller="Admin" asp-route-iDUser="@Model[i].Id" asp-route-IdRole="@role.Id">🗑</a>
+
+                                    </div>
+                                }
+                                <a  asp-action="PhanQuyen" asp-controller="Admin" asp-route-idUser="@Model[i].Id">🖍</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let deleteButtons = document.querySelectorAll(".delete-btn");
+            deleteButtons.forEach(button => {
+                button.addEventListener("click", function (event) {
+                    if (!confirm("Bạn có chắc chắn muốn xóa quyền này?")) {
+                        event.preventDefault(); // Ngăn chặn chuyển trang nếu hủy
+                    }
+                });
+            });
+        });
+    </script>
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            var message = @Html.Raw(Json.Serialize(TempData["Message"]));
+            alert(message);
+
+
+  
+        </script>
+    }
+</body>
+</html>

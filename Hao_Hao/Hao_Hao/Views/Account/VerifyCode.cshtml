@@ -1,0 +1,60 @@
+﻿@model Hao_Hao.Models.VerifyCodeViewModel
+@{
+    Layout = null;
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="~/css/style - Copy (2).css" />
+</head>
+<body>
+    <div class="flex-center gap40px center backgroudwihte">
+        <div class="">
+            <img src="~/img/Pharmacy.png" alt="" />
+        </div>
+        <div id="containerLogin">
+            <h1 style="color: rgba(45, 152, 42, 1)">Quên mật khẩu</h1>
+            <form method="post" class="gap40px">
+                <div class="flex-center">
+                    <label style="width: 146px" for="VerificationCode">Nhập mã xác nhận:</label>
+                    <input id="VerificationCode"
+                           name="verificationCode"
+                           type="text"
+                           required />
+                </div>
+                <div class="flex-center">
+                    <label style="width: 146px" for="NewPassword">Nhập mật khẩu mới:</label>
+                    <input id="NewPassword"
+                           name="newPassword"
+                           type="password"
+                           required />
+                </div>
+                <!-- Hiển thị lỗi nếu có -->
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v =>
+                v.Errors))
+                {
+                    <div class="text-danger">@error.ErrorMessage</div>
+                }
+
+                <button type="submit">Đổi mật khẩu</button>
+            </form>
+            <!-- Liên kết trở về -->
+            <a class="btnBack" href="@Url.Action("Login", "Account")"><< Trở về</a>
+        </div>
+    </div>
+</body>
+</html>
+

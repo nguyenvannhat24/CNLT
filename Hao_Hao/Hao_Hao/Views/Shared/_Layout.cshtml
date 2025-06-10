@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+  </head>
+  <body>
+  <header>
+    <div class="flex-center-colum" id="head1">
+      <h3>Mua hàng tích lũy - Nhận ngay nhiều ưu đãi</h3>
+      <p>Đăng kí thành viên ngay <a href="#">tại đây</a></p>
+    </div>
+    <div class="flex-center" id="head2">
+      <div id="logo"><img src="~/img/logo.png" alt="" /></div>
+      <div id="tapbast" class="flex-center-colum">
+        <div class="flex-center" id="tap">
+                    <div class="cursor"><a style="text-decoration:none" href="@Url.Action("Index", "Home")"> Trang chủ</a></div>
+                    <div class="cursor"><a style="text-decoration:none" href="@Url.Action("GioiThieu", "Home")"> Giới Thiệu</a></div>
+                    <div class="cursor"><a style="text-decoration:none" href="@Url.Action("Index", "Home")"> Thể lệ Tích Điểm</a></div>
+                    <div class="cursor"><a style="text-decoration:none" href="@Url.Action("Index", "Home")"> Hỗ Trợ</a></div>
+        </div>
+        <div class="position-relative">
+                    <form asp-controller="HangHoa" asp-action="TimKiem" method="post">
+                        <input id="seachbtn" type="text" name="a" placeholder="nhập để tìm kiếm thuốc" />
+                        <button type="submit" style="display:none"></button>
+                        </form>
+          
+                <img class="position-absolute" src="~/img/Icon.png" alt="" />
+        </div>
+      </div>
+      <div id="loginbtn" class="flex-end colum">
+        <div class="top flex-between">
+          <p>hotline:0862465048</p>
+                    <div id="Loginbutton" class="flex-center" onclick="window.location.href='@Url.Action("Login", "Account")'">
+                        <p>Đăng nhập</p>
+                        <img src="~/img/avata.png" alt="" />
+                    </div>
+
+        </div>
+        <div class="footer-bewent flex-center">
+                    <a style="text-decoration:none" href="@Url.Action("LichSuMuaHang", "HangHoa")" class=" btnGioHang flex-center">
+                      <img style=" margin :2px" src="~/img/a1.png" alt="" />
+                       <p style="width:88px">Lịch sử mua hàng</p>
+                    </a>
+                    <a style="text-decoration:none" href="@Url.Action("XemGioHang", "HangHoa")" class="btnGioHang flex-center">
+                        <p>Giỏ Hàng</p>
+                        <img style=" margin :2px" src="~/img/a2.png" alt="Giỏ hàng" />
+                    </a>
+
+        </div>
+      </div>
+    </div>
+    <div id="productTap" class="flex-center">
+
+            <div class="productTap">
+                <select id="thuocSelect1" onchange="navigateToPage('thuocSelect1')">
+                    <option value="">Chọn thuốc</option>
+                    <option value="@Url.Action("Privacy", "Home", new { id = 1 })">Thuốc</option>
+                   
+                </select>
+            </div>
+
+            <div class="productTap">
+                <select id="thuocSelect2" onchange="navigateToPage('thuocSelect2')">
+                    <option value="">Thực phẩm chức năng</option>
+                    <option value="@Url.Action("ThucPhamChucNang", "Home" )">Thực Phẩm Chức Năng</option>
+                </select>
+            </div>
+            <div class="productTap">
+                <select id="thuocSelect3" onchange="navigateToPage('thuocSelect3')">
+                    <option value="">Dược Mỹ Phẩm</option>
+                    <option value="@Url.Action("DuocMiPham", "Home" )">Dược Mỹ Phẩm</option>
+                </select>
+            </div>
+            <div class="productTap">
+                <select id="thuocSelect4" onchange="navigateToPage('thuocSelect4')">
+                    <option value="">Thiết Bị Y Tế</option>
+                    <option value="@Url.Action("ThietbiYte", "Home" )">Thiết bị y tế</option>
+                </select>
+            </div>
+    </div>
+  </header>
+  <body1>
+   @RenderBody()
+  </body1>
+  <footer style="margin-top : 120px">
+    <div class="flex-center" id="footer">
+      <div class="flex-center-colum">
+        <img src="~/img/b1.png" alt="" />
+        <b>THUỐC CHÍNH HÃNG</b>
+      </div>
+      <div class="flex-center-colum">
+        <img src="~/img/b2.png" alt="" />
+        <b>CAM KẾT CHẤT LƯỢNG</b>
+      </div>
+      <div class="flex-center-colum">
+        <img src="~/img/b3.png" alt="" />
+        <b>HỖ TRỢ TƯ VẤN</b>
+      </div>
+      <div class="flex-center-colum">
+        <img src="~/img/b4.png" alt="" />
+        <b>MIỄN PHÍ VẬN CHUYỂN</b>
+      </div>
+    </div>
+    <div class="flex-center-start position-relative magin20px">
+      <div class="flex-start-colum gap20px">
+        <img src="~/img/logo.png" alt="" />
+
+        <div id="text">
+          <b>Công ty cổ phần bán lẻ Nhà thuốc Benzen</b>
+          <p>Số ĐKKD 12346789 cấp 04/11/2018 tại Sở Kế hoạch Đầu tư TPHCM</p>
+          <p><b>Địa chỉ:</b> XX Bạch Đằng, P.2, Q.Tân Bình, TP. Hồ Chí Minh</p>
+          <p><b>Email:</b> sale@nhathuocbenzen.com</p>
+        </div>
+        <div class="flex">
+          <img src="~/img/c1.png" alt="" />
+          <img src="~/img/c2.png" alt="" />
+          <img src="~/img/c3.png" alt="" />
+        </div>
+      </div>
+      <div class="flex-start-colum intro">
+        <b>GIỚI THIỆU</b>
+        <p>Giới thiệu nhà thuốc</p>
+        <p>Hướng dẫn mua hàng Online</p>
+        <p>Chính sách giao hàng</p>
+        <p>Chính sách thanh toán</p>
+        <p>Chính sách đổi trả, bảo hành</p>
+        <p>Chính sách bảo mật</p>
+        <p>Thể lệ tích điểm thành viên</p>
+      </div>
+      <div class="flex-start-colum intro">
+        <b>DANH MỤC SẢN PHẨM</b>
+        <p>Thuốc</p>
+        <p>Thực phẩm chức năng</p>
+        <p>Dược-Mỹ phẩn</p>
+        <p>Thiết bị y tế</p>
+      </div>
+      <div class="flex-start-colum intro gap20px">
+        <b class="colorblue">kẾ NỐI VỚI HAOHAO</b>
+        <div class="flex-center gap20px">
+          <img src="~/img/facebook.png" alt="" />
+          <img src="~/img/Google.png" alt="" />
+          <img src="~/img/mail.png" alt="" />
+        </div>
+        <b>Holine: 0869257723</b>
+        <div class="flex-center gap20px">
+          <img src="~/img/napas.png" alt="" />
+          <img src="~/img/momo.png" alt="" />
+        </div>
+      </div>
+      <div class="position-absolute right-top">
+        <img src="~/img/boxchat.png" alt="" />
+      </div>
+    </div>
+    <div class="flex-center-colum" id="end">
+      <p>
+        Copyright© 2023 bởi nhóm 2 - Phân tích, thiết kế Website lĩnh vực dược
+        phẩm
+      </p>
+      <p>
+        Website là sản phẩm phục vụ cho môn học - Nội dung trên trang web này
+        chỉ dành cho mục đích học tập
+      </p>
+    </div>
+  </footer>
+    <script>
+        function navigateToPage(selectId) {
+            var select = document.getElementById(selectId);
+            var url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>

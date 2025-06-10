@@ -1,0 +1,21 @@
+﻿
+  @if (TempData["thongbao"] != null)
+    {
+        <script>
+            var message = "@TempData["thongbao"]";
+            var textarea = document.createElement("textarea");
+            textarea.innerHTML = message;
+            alert(textarea.value);
+        </script>
+       
+    }
+@if (TempData["Message"] != null)
+{
+  
+    <script>
+        var message = "@TempData["Message"]";
+        var textarea = document.createElement("textarea");
+        textarea.innerHTML = message;
+        alert(textarea.value);
+    </script>
+}

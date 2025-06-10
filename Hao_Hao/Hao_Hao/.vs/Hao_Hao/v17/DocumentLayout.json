@@ -1,0 +1,260 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\hao_hao.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:hao_hao.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\attributes\\authorizerolesattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:attributes\\authorizerolesattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\models\\giohangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:models\\giohangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\views\\hanghoa\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:views\\hanghoa\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\controllers\\hanghoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:controllers\\hanghoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\views\\hanghoa\\thanhtoantatca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:views\\hanghoa\\thanhtoantatca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\views\\hanghoa\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:views\\hanghoa\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|d:\\cnlt\\hao_hao\\hao_hao\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F90E6B21-CA95-486F-9D01-B9E166DF34FA}|Hao_Hao.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hao_Hao",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Hao_Hao.csproj",
+              "RelativeDocumentMoniker": "Hao_Hao.csproj",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Hao_Hao.csproj",
+              "RelativeToolTip": "Hao_Hao.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-03T10:51:32.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T10:16:31.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T10:15:09.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T10:14:54.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:14:27.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:23:07.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAowHcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:19:44.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthorizeRolesAttribute.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Attributes\\AuthorizeRolesAttribute.cs",
+              "RelativeDocumentMoniker": "Attributes\\AuthorizeRolesAttribute.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Attributes\\AuthorizeRolesAttribute.cs",
+              "RelativeToolTip": "Attributes\\AuthorizeRolesAttribute.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:19:36.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "Models\\GioHang.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Models\\GioHang.cs",
+              "RelativeToolTip": "Models\\GioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:30:45.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GioHangViewModel.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Models\\GioHangViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\GioHangViewModel.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Models\\GioHangViewModel.cs",
+              "RelativeToolTip": "Models\\GioHangViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:30:12.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XemGioHang.cshtml",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\XemGioHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\HangHoa\\XemGioHang.cshtml",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\XemGioHang.cshtml",
+              "RelativeToolTip": "Views\\HangHoa\\XemGioHang.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T06:28:51.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HangHoaController.cs",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\HangHoaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HangHoaController.cs",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Controllers\\HangHoaController.cs",
+              "RelativeToolTip": "Controllers\\HangHoaController.cs",
+              "ViewState": "AgIAAA0CAAAAAAAAAAAAAFIBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:25:48.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThanhToanTatCa.cshtml",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\ThanhToanTatCa.cshtml",
+              "RelativeDocumentMoniker": "Views\\HangHoa\\ThanhToanTatCa.cshtml",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\ThanhToanTatCa.cshtml",
+              "RelativeToolTip": "Views\\HangHoa\\ThanhToanTatCa.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T06:20:48.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChiTietSanPham.cshtml",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\ChiTietSanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\HangHoa\\ChiTietSanPham.cshtml",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\HangHoa\\ChiTietSanPham.cshtml",
+              "RelativeToolTip": "Views\\HangHoa\\ChiTietSanPham.cshtml",
+              "ViewState": "AgIAAJoAAAAAAAAAAAArwJ4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T06:22:15.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CNLT\\Hao_Hao\\Hao_Hao\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T06:14:42.985Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

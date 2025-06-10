@@ -1,0 +1,192 @@
+﻿@model ChiTietSanPhamViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="~/css/styte1.css" />
+</head>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        text-align: center;
+        position: relative;
+    }
+
+    .close {
+        color: #aaa;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: green;
+        color: white;
+        border-radius:5px
+    }
+
+    .btn-danger {
+        background-color: red;
+        color: white;
+        border-radius: 5px
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <!-- Nội dung trang sản phẩm -->
+        <div id="detailProduct" class="flex-center magin-auto">
+            <img style="width:582px; height:631px" src="@Model.SanPham.HinhAnh" alt="anhsp" />
+            <div id="formBuyProduct" class="flex-colum-start">
+                <h1>@Model.SanPham.TenSanPham</h1>
+                <p style="display:none" id="product-id" idSp="@Model.SanPham.Id"></p>
+                <h3 style="color: rgba(45, 152, 42, 1)">@Model.SanPham.Gia.ToString("N0") Đ</h3>
+                <ul>
+                    <li>@Model.SanPham.MoTa</li>
+                            
+                </ul>
+                <div class="flex-center-start">
+                    <p>Chọn số lượng</p>
+                    <div id="selectQuality">
+                        <button class="quantity-btn radius-left" onclick="changeQuantity(-1)">
+                            −
+                        </button>
+                        <input type="number" id="quantity" class="quantity-input" value="1" min="1" />
+                        <button class="quantity-btn radius-right" onclick="changeQuantity(1)">
+                            +
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display:flex ; gap: 30px">
+                    <button id="Choose-to-buy">Chọn mua</button>
+                    <form asp-controller="HangHoa" asp-action="ThemGioHang" method="post">
+                        <input type="hidden" name="tenHang" value="@Model.SanPham.TenSanPham" />
+                        <input type="hidden" name="MaHang" value="@Model.SanPham.Id" />
+                        <input type="hidden" name="soLuong" value="1" />
+                        <button id="Add-cart" class="btnBuyProduct vien-hover themgiohang" type="submit">Thêm giỏ hàng</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Sản phẩm khác</h1>
+            <div class="grid1-4-5">
+                @foreach (var item in Model.DanhSachSanPham)
+                {
+                    <div class="product-item">
+                        <img src="@item.HinhAnh" alt="@item.TenSanPham" idSp="@item.Id" class="product-detail-trigger" />
+                        <p class="product-name" idSp="@item.Id" class="product-detail-trigger">@item.TenSanPham</p>
+                        <p class="product-price">@item.Gia.ToString("N0") đ</p>
+                        <form asp-controller="HangHoa" asp-action="ThemGioHang" method="post">
+                            <input type="hidden" name="tenHang" value="@item.TenSanPham" />
+                            <input type="hidden" name="MaHang" value="@item.Id" />
+                            <input type="hidden" name="soLuong" value="1" />
+                            <button type="submit" class="btn-add-cart">Thêm vào giỏ hàng</button>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Modal QR Code -->
+        <div id="qrModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Quét mã QR để thanh toán</h3>
+                <img id="qrImage" src="" alt="Mã QR" style="width:300px;height:300px;" />
+                <p>Vui lòng xác nhận thanh toán qua mã QR.</p>
+                <div style="margin-top: 20px;">
+                    <button id="confirmPayment" class="btn btn-success">OK</button>
+                    <button id="cancelPayment" class="btn btn-danger">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hàm thay đổi số lượng sản phẩm
+        function changeQuantity(amount) {
+            let input = document.getElementById("quantity");
+            let value = parseInt(input.value) || 1;
+            value += amount;
+            if (value < 1) value = 1; // Không cho giá trị nhỏ hơn 1
+            input.value = value;
+        }
+
+        // Hiển thị modal với mã QR
+        function showQRModal(idSanPham, soLuong) {
+            let qrImageSrc = `/img/qr-code-example.png?idSanPham=${idSanPham}&soLuong=${soLuong}`;
+            document.getElementById("qrImage").src = qrImageSrc;
+            document.getElementById("qrModal").style.display = "block";
+        }
+
+        // Hàm đóng modal
+        function closeModal() {
+            document.getElementById("qrModal").style.display = "none";
+        }
+
+        // Xử lý khi nhấn nút "Mua ngay" -> Hiển thị QR modal
+        document.getElementById("Choose-to-buy").onclick = function () {
+            let soLuong = document.getElementById("quantity").value;
+            let idSanPham = document.getElementById("product-id").getAttribute("idSp");
+            showQRModal(idSanPham, soLuong);
+        };
+
+        // Xử lý khi nhấn nút "OK" (Thanh toán)
+        document.getElementById("confirmPayment").onclick = function () {
+            let soLuong = document.getElementById("quantity").value;
+            let idSanPham = document.getElementById("product-id").getAttribute("idSp");
+            window.location.href = `/HangHoa/ThanhToanTrucTiep?idSanPham=${idSanPham}&soLuong=${soLuong}`;
+        };
+
+        // Xử lý khi nhấn nút "Hủy" (Quay lại trang ban đầu)
+        document.getElementById("cancelPayment").onclick = function () {
+            closeModal();
+            window.location.href = '/Home/Index';  // Quay lại trang ban đầu (sửa đường dẫn nếu cần)
+        };
+             // Xử lý sự kiện click cho chi tiết sản phẩm trong phần "Sản phẩm khác"
+        document.addEventListener("click", function(event) {
+            // Kiểm tra xem phần tử được click có class "product-detail-trigger" không
+            if (event.target.classList.contains("product-detail-trigger")) {
+                let idSanPham = event.target.getAttribute("idSp"); // Lấy ID sản phẩm từ thuộc tính idSp
+                console.log("ID Sản phẩm:", idSanPham);
+                // Truyền id vào controller HangHoa method ChiTietSanPham
+                window.location.href = `/HangHoa/ChiTietSanPham/${idSanPham}`;
+            }
+        });
+    </script>
+</body>
+</html>

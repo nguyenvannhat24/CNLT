@@ -1,0 +1,170 @@
+﻿@model List<SanPham>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Quản lý thuốc</title>
+    <style>
+        body {
+        width: 1440px;
+        height: auto;
+
+        font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+        width: 200px;
+        background-color: #4caf50;
+        height: auto;
+        float: left;
+        padding-top: 10px;
+        color: white;
+        margin-top: 108px;
+        }
+
+        .sidebar a {
+        display: block;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        }
+
+        .sidebar a:hover {
+        background-color: #388e3c;
+        }
+
+        .main {
+        margin-left: 200px;
+        padding: 20px;
+        }
+
+        .header {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        }
+
+        .add-button {
+        float: right;
+        margin-bottom: 10px;
+        background-color: #4caf50;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        table {
+        width: 100%;
+        background-color: #a5d6a7;
+        border-collapse: collapse;
+        }
+
+        th,
+        td {
+        padding: 10px;
+        text-align: center;
+        }
+
+        td a {
+        text-decoration: none;
+        }
+
+        th {
+        background-color: #66bb6a;
+        }
+
+        .action-icons {
+        cursor: pointer;
+        }
+
+        .row {
+        background-color: white;
+        margin-top: 10px;
+        }
+
+        .placeholder {
+        background-color: #c9a8a8;
+        height: 20px;
+        border-radius: 4px;
+        display: inline-block;
+        width: 100px;
+        }
+
+        .contain {
+
+        margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="sidebar">
+            <a href="/Admin/Home">Home 🏠</a>
+            <a href="/Admin/QuanLyNguoiDung">Quản lý Người Dùng</a>
+            <a href="#">Quản lý hàng</a>
+            <a href="#">Quản lý Người Dùng</a>
+        </div>
+
+        <div class="main">
+            <div class="header">Thuốc trong hệ thống</div>
+            <button id="them" class="add-button">+ Thêm hàng</button>
+
+            <table>
+                <tr>
+                    <th>Tên Thuốc</th>
+                    <th>Mô Tả</th>
+                   
+                    <th>giá bán</th>
+                    <th>Số Lượng</th>
+                    <th>Hình ảnh</th>
+                    <th>Thao tác</th>
+                </tr>
+                <!-- Dòng dữ liệu -->
+                @foreach (var item in @Model)
+                {
+                    <tr class="row">
+                        <td>
+                            <p>@item.TenSanPham</p>
+                        </td>
+                        <td>
+                            <p>@item.MoTa</p>
+                        </td>
+                        <td>
+                            <p>@item.Gia.ToString("N0") đ</p>
+
+                        </td>
+                        <td>
+                            <p>@item.SoLuongTon</p>
+                        </td>
+                        <td>
+                            <img style="width: 50px; height: 50px"
+                                 src="@item.HinhAnh"
+                                 alt="" />
+                        </td>
+                        <td>
+                            <a href="/Admin/ChinhSuaSanPham?id=@item.Id">✏️</a>
+
+
+                            <form asp-controller="Admin"  asp-action="XoaSanPham" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" style="background:none;border:none;cursor:pointer;">🗑️</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+              
+            </table>
+        </div>
+    </div>
+    <script>
+        var themhang = document.getElementById("them");
+        themhang.onclick = function () {
+            window.location.href = '/Admin/ThemSanPham'; // điều hướng sang action GET
+        }
+    </script>
+
+</body>
+</html>

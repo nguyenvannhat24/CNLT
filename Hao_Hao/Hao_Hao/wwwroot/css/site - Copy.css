@@ -1,0 +1,449 @@
+body {
+    margin: auto;
+    width: 1440px;
+    height: auto;
+    background-color: rgba(224, 248, 228, 0.3);
+}
+
+header {
+    width: 100%;
+    height: 171px;
+    background-color: rgba(224, 248, 228, 0.3);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center-colum {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#head1 {
+    background-color: rgba(45, 152, 42, 1);
+}
+
+    #head1 h3,
+    #head1 p {
+        margin: 0;
+    }
+
+#head2 {
+    width: 100%;
+    height: 99px;
+    background-color: rgba(255, 250, 250, 1);
+}
+
+#tap {
+    height: 18px;
+    width: 580px;
+}
+
+#logo {
+}
+
+#tapbast {
+    width: 590px;
+    height: 99px;
+}
+
+#seachbtn {
+    width: 592px;
+    height: 48px;
+    color: #000;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 40px;
+    border: 1px solid #000;
+    padding-left: 50px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 20px;
+    top: 17px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+#loginbtn {
+    width: 262px;
+    height: 84px;
+}
+
+.top {
+    width: 247px;
+    height: 29px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.colum {
+    flex-direction: column;
+}
+
+.footer-bewent {
+    width: 100%;
+    height: 50px;
+}
+
+.btnGioHang {
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #817f7f;
+    border-radius: 10px;
+    gap: 5px;
+    justify-content: center;
+}
+
+#loginbtn p {
+    width: 48px;
+}
+
+#Loginbutton {
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+}
+
+    #Loginbutton p {
+        font-size: 10px;
+    }
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#productTap {
+    width: 100%;
+    background-color: rgba(45, 152, 42, 1);
+    height: 34px;
+}
+
+    #productTap select {
+        background-color: rgba(45, 152, 42, 1);
+        color: white;
+    }
+
+#footer {
+    background-color: rgba(206, 239, 205, 1);
+    width: 100%;
+    height: 143px;
+    margin-bottom: 20px;
+}
+
+b {
+    margin: 10px;
+}
+
+#text {
+    width: 450px;
+    height: 126px;
+}
+
+.flex-start-colum {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+
+#text p {
+    margin-bottom: 1.5px;
+    font-size: 15px;
+    letter-spacing: 0.2px; /* Dãn cách ch? 2px */
+}
+
+#text b {
+    margin: 0px;
+}
+
+.gap20px {
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.intro p {
+    margin: 5px;
+    opacity: 60%;
+}
+
+.intro b {
+    margin: 3px;
+    margin-bottom: 4px;
+}
+
+.flex-center-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.colorblue {
+    color: rgba(45, 152, 42, 1);
+}
+
+.right-top {
+    left: 93%;
+    top: 190px;
+}
+
+#end {
+    margin-top: 20px;
+    height: 56px;
+    background-color: rgba(45, 152, 42, 1);
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+    #end p {
+        color: white;
+        margin: 4px;
+    }
+
+.magin20px {
+    margin-bottom: 40px;
+}
+
+a {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center; /* C?n gi?a theo chi?u ngang */
+    align-items: center; /* C?n gi?a theo chi?u d?c */
+}
+
+.maginleft20 {
+    margin-left: 40px;
+}
+
+.maginBottom20px {
+    margin-bottom: 50px;
+}
+
+.product-Hot {
+    width: 1440px;
+    height: 543px;
+    background-color: rgba(224, 248, 228, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#ImgTitle {
+    width: 1440px;
+    height: 450px;
+    background-color: aquamarine;
+    margin-bottom: 200px;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.gap40px {
+    gap: 40px;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.product {
+    width: 220px;
+    height: 364px;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+#product2 p {
+    width: 100%;
+    margin: 0;
+}
+
+.btnBuyProduct {
+    text-align: center;
+    width: 195px;
+    height: 28px;
+    padding-top: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.backgroudwihte {
+    background-color: white;
+}
+
+#typeMedicine {
+    width: 775px;
+    height: 48px;
+}
+
+.magintop {
+    margin-top: 138px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    height: 48px;
+    width: 48px;
+    margin-top: -22px;
+    padding: 16px;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 60px;
+    border: 1px solid black;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    width: 223px;
+    height: 363px;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#productCenter {
+    width: 1400px;
+    margin: auto;
+}
+
+.ForP p {
+    width: 75%;
+}
+
+.magin-img-center img {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.btnTapProduct:hover {
+    background-color: chartreuse;
+}
+
+.product-New {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.vien-hover {
+    border: 1px solid rgba(45, 152, 42, 1);
+}
+.vien-hover:hover {
+        background-color: rgba(45, 152, 42, 1);
+}

@@ -1,0 +1,100 @@
+﻿@model SanPham
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Chỉnh sửa sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            width: 1440px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4caf50;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+            .submit-btn:hover {
+                background-color: #388e3c;
+            }
+
+        .back-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+            .back-link a {
+                color: #4caf50;
+                text-decoration: none;
+            }
+
+                .back-link a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <h2>Chỉnh sửa sản phẩm</h2>
+
+    <form asp-action="ChinhSuaSanPham" asp-controller="Admin" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="HinhAnhCu" value="@Model.HinhAnh" />
+
+        <label for="TenSanPham">Tên sản phẩm:</label>
+        <input type="text" id="TenSanPham" name="TenSanPham" value="@Model.TenSanPham" required />
+
+        <label for="MoTa">Mô tả:</label>
+        <textarea id="MoTa" name="MoTa" rows="4">@Model.MoTa</textarea>
+
+        <label for="Gia">Giá bán:</label>
+        <input type="number" id="Gia" name="Gia" value="@Model.Gia" required />
+
+        <label for="SoLuongTon">Số lượng tồn:</label>
+        <input type="number" id="SoLuongTon" name="SoLuongTon" value="@Model.SoLuongTon" required />
+
+        <label for="HinhAnhLink">Link ảnh mới (nếu có):</label>
+        <input type="text" id="HinhAnhLink" name="HinhAnhLink" placeholder="Nhập link hình ảnh mới" />
+
+        <button type="submit" class="submit-btn">Lưu thay đổi</button>
+    </form>
+
+    <div class="back-link">
+        <a href="/Admin/DanhSachSanPham">← Quay lại danh sách</a>
+    </div>
+</body>
+</html>

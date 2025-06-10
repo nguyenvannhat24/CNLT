@@ -1,0 +1,83 @@
+﻿@model List<BaoCaoMuaHang>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/Amind - Copy.css" />
+</head>
+<body>
+    <div class="contain">
+        <h2 style="width: 350px; margin: auto; margin-bottom: 50px">
+            Chào Admin Thống Đã Sẵn Sàng
+        </h2>
+        <div class="flex_center">
+            <div id="tapbase">
+                <a href="#">Home 🏠</a>
+                <a asp-action="QuanLyNguoiDung" asp-controller="Admin">Quản Lý Người Dùng</a>
+
+                <a asp-action="QuanLyhang" asp-controller="Admin">Quản Lý Hàng</a>
+                <a href="">Quản Lý Người Dùng</a>
+            </div>
+            <div id="SlDaBan">
+                <p style="font-size: 23px">Số lượng đã bán</p>
+                <table>
+                    <th>Tên Hàng</th>
+                    <th>Giá</th>
+                    <th>Số lượng đã bán</th>
+                    <th>Số lượng tồn</th>
+                    <th>Tổng Tiền</th>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.TenSanPham</td>
+                            <td>@item.Gia.ToString("N0") đ</td>
+                            <td>@item.SoLuong.ToString("N0")</td>
+                            <td>@item.SoLuongTon</td>
+                            <td class="sotien" >@item.TongTien.ToString("N0") đ</td>
+                        </tr>
+                    }
+                </table>
+                <div class="flex_center">
+                    <h3>Tổng Doanh Thu:</h3>
+                    <h3 id="doanhthu">1.000.000.000Đ</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script>
+        var sotien = document.getElementsByClassName("sotien"); // Lấy danh sách các phần tử có class "sotien"
+        var doanhthu = document.getElementById("doanhthu");
+
+        var tien = 0;
+
+        for (let i = 0; i < sotien.length; i++) {
+            // Lấy nội dung của thẻ <td>, loại bỏ ký tự không phải số, rồi chuyển thành số
+            let soTienText = sotien[i].innerText.replace(/\D/g, ""); // Chỉ giữ số
+            tien += parseFloat(soTienText) || 0; // Nếu NaN thì mặc định là 0
+        }
+
+        // Hiển thị số tiền với dấu phân cách nghìn và thêm đơn vị VND
+        doanhthu.innerText = tien.toLocaleString("vi-VN") + " VND";
+
+</script>
+
+</body>
+</html>
+
+@if (TempData["Loi"] != null)
+{
+    <div style="color: red; font-weight: bold;">
+        @TempData["Loi"]
+    </div>
+}
+@if (TempData["Message"] != null)
+{
+    <script>
+        var message = "@TempData["Message"]";
+        var textarea = document.createElement("textarea");
+        textarea.innerHTML = message;
+        alert(textarea.value);
+    </script>
+}

@@ -1,0 +1,71 @@
+﻿@model Hao_Hao.Models.SanPham
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>🛒 Thêm sản phẩm</h2>
+
+        <form asp-action="ThemSanPham" asp-controller="Admin" method="post" enctype="multipart/form-data">
+            <table class="table table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Mô tả</th>
+                        <th>Số lượng</th>
+                        <th>Hình ảnh (URL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="TenSanPham" class="form-control" required value="@Model.TenSanPham" />
+                        </td>
+                        <td>
+                            <input name="Gia" min="0" type="number" step="0.01" class="form-control" required value="@Model.Gia" />
+                        </td>
+                        <td>
+                            <input name="MoTa" class="form-control" value="@Model.MoTa" />
+                        </td>
+                        <td>
+                            <input name="SoLuongTon" min="0" type="number" class="form-control" required value="@Model.SoLuongTon" />
+                        </td>
+                        <td>
+                            <input name="HinhAnh" type="text" class="form-control" placeholder="Nhập URL hình ảnh" value="@Model.HinhAnh" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="submit" class="btn btn-primary float-end">💾 Lưu sản phẩm</button>
+        </form>
+    </div>
+</body>
+</html>
+@if (TempData["Message"] != null)
+{
+    <script>
+        var message = "@TempData["Message"]";
+        alert(message);  // Hiển thị thông báo
+    </script>
+}
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <h5>Lỗi khi thêm sản phẩm:</h5>
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
